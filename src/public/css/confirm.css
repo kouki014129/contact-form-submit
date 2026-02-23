@@ -1,0 +1,120 @@
+.confirm-panel {
+    background: #ffffff;
+    color: #8d7f76;
+    padding: 48px 0 34px;
+}
+
+.confirm-title {
+    margin: 0 0 36px;
+    text-align: center;
+    color: #8d7f76;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 400;
+}
+
+.confirm-table {
+    width: min(980px, calc(100% - 30px));
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #dcd6d1;
+    table-layout: fixed;
+}
+
+.confirm-table th,
+.confirm-table td {
+    border-top: 1px solid #dcd6d1;
+    padding: 19px 28px;
+    font-size: 18px;
+    line-height: 1.35;
+    text-align: left;
+    vertical-align: middle;
+    color: #8d7f76;
+}
+
+.confirm-table tr:first-child th,
+.confirm-table tr:first-child td {
+    border-top: none;
+}
+
+.confirm-table th {
+    width: 31%;
+    background: #b9a99a;
+    color: #f8f8f8;
+    font-weight: 400;
+}
+
+.confirm-table td {
+    background: #ffffff;
+}
+
+.confirm-table .multiline {
+    white-space: pre-line;
+    line-height: 1.45;
+}
+
+.confirm-actions {
+    margin-top: 42px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-actions__form {
+    display: inline;
+}
+
+.send-btn {
+    display: inline-block;
+    min-width: 132px;
+    height: 42px;
+    border: none;
+    background: #7f6f68;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.edit-link {
+    display: inline-block;
+    margin-left: 42px;
+    color: #8d7f76;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .confirm-panel {
+        padding-top: 30px;
+    }
+
+    .confirm-title {
+        font-size: clamp(24px, 4vw, 34px);
+        margin-bottom: 24px;
+    }
+
+    .confirm-table {
+        width: calc(100% - 20px);
+    }
+
+    .confirm-table th,
+    .confirm-table td {
+        font-size: 18px;
+        padding: 11px 12px;
+    }
+
+    .send-btn {
+        min-width: 110px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .edit-link {
+        margin-left: 20px;
+        font-size: 20px;
+        line-height: 38px;
+    }
+}

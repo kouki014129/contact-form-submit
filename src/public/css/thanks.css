@@ -1,0 +1,53 @@
+.site-header {
+    display: none;
+}
+
+.thanks-page {
+    position: relative;
+    min-height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.thanks-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: clamp(80px, 18vw, 250px);
+    line-height: 1;
+    color: #f1f1f1;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+}
+
+.thanks-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.thanks-message {
+    margin: 0 0 28px;
+    color: #8d7f76;
+    font-size: clamp(24px, 2vw, 42px);
+    font-weight: 700;
+    font-family: "Inika", "Hiragino Mincho ProN", "Yu Mincho", "Times New Roman", serif;
+}
+
+.thanks-home {
+    display: inline-block;
+    min-width: 124px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background: #7f6f68;
+    color: #ffffff;
+    font-size: 16px;
+}

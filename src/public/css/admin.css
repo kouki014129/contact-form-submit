@@ -1,0 +1,439 @@
+.header-btn-form {
+    margin: 0;
+}
+
+.header-btn {
+    display: inline-block;
+    min-width: 98px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: #d2c8c2;
+    border: 1px solid #e5ddd7;
+    background: #f7f6f5;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+.admin-page {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 42px 20px 64px;
+    color: #8d7f76;
+    --admin-content-width: 1180px;
+}
+
+.admin-page__title {
+    margin: 0 0 34px;
+    text-align: center;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 400;
+}
+
+.admin-search {
+    display: grid;
+    grid-template-columns: 330px 130px 250px 170px 120px 120px;
+    gap: 12px;
+    align-items: center;
+    width: min(var(--admin-content-width), 100%);
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+
+.admin-search__input {
+    height: 48px;
+    border: 1px solid #d9d2cd;
+    background: #f5f5f5;
+    color: #8d7f76;
+    font-size: 16px;
+    padding: 0 18px;
+    line-height: 1.4;
+    text-align: left;
+    direction: ltr;
+}
+
+.admin-search__input::placeholder {
+    color: #bdb3ad;
+}
+
+.admin-search__input--keyword {
+    width: 100%;
+    min-width: 0;
+}
+
+.admin-search__input--select {
+    min-width: 170px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("/img/select-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px 8px;
+    padding-right: 38px;
+}
+
+.admin-search__input--gender {
+    width: 100%;
+    min-width: 0;
+}
+
+.admin-search__input--category {
+    width: 100%;
+    min-width: 0;
+}
+
+.admin-date-picker {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+}
+
+.admin-date-picker::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    width: 14px;
+    height: 8px;
+    background: url("/img/select-triangle.svg") no-repeat center / contain;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.admin-search__input--date-native {
+    width: 100%;
+    min-width: 0;
+    color: #bdb3ad;
+    padding-right: 38px;
+    cursor: pointer;
+}
+
+.admin-search__input--date-native::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    width: 38px;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.admin-search__button--search,
+.admin-search__button--reset {
+    width: 100%;
+}
+
+.admin-search__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-width: 0;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.admin-search__button--search {
+    background: #8a7a69;
+    color: #fff;
+}
+
+.admin-search__button--reset {
+    background: #d8c6b2;
+    color: #fff;
+}
+
+.admin-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: min(var(--admin-content-width), 100%);
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-toolbar__export {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    min-width: 130px;
+    border: 1px solid #d9d2cd;
+    border-radius: 2px;
+    background: #f0ece9;
+    color: #8d7f76;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.admin-toolbar__pagination nav {
+    display: flex;
+    align-items: center;
+}
+
+.admin-toolbar__pagination .relative {
+    display: inline-flex;
+}
+
+.admin-pagination {
+    display: inline-flex;
+    border: 1px solid #e3ddd8;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.admin-pagination__item {
+    min-width: 40px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #8d7f76;
+    text-decoration: none;
+    font-size: 18px;
+    border-left: 1px solid #e3ddd8;
+}
+
+.admin-pagination__item:first-child {
+    border-left: none;
+}
+
+.admin-pagination__item--active {
+    background: #8a7a69;
+    color: #fff;
+}
+
+.admin-pagination__item--disabled {
+    color: #d2c8c2;
+}
+
+.admin-table-wrap {
+    border: 1px solid #e3ddd8;
+    background: #fff;
+    overflow-x: auto;
+    width: min(var(--admin-content-width), 100%);
+    margin: 0 auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 920px;
+}
+
+.admin-table th {
+    background: #8a7a69;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 18px;
+    text-align: left;
+}
+
+.admin-table td {
+    padding: 12px 18px;
+    border-top: 1px solid #ebe6e2;
+    font-size: 14px;
+    color: #8d7f76;
+}
+
+.admin-table th,
+.admin-table td {
+    white-space: nowrap;
+}
+
+.admin-table td:nth-child(4) {
+    white-space: nowrap;
+}
+
+.admin-table th:nth-child(1),
+.admin-table td:nth-child(1) {
+    width: 23%;
+}
+
+.admin-table th:nth-child(2),
+.admin-table td:nth-child(2) {
+    width: 10%;
+    text-align: center;
+}
+
+.admin-table th:nth-child(3),
+.admin-table td:nth-child(3) {
+    width: 31%;
+}
+
+.admin-table th:nth-child(4),
+.admin-table td:nth-child(4) {
+    width: 26%;
+}
+
+.admin-table th:nth-child(5),
+.admin-table td:nth-child(5) {
+    width: 10%;
+}
+
+.admin-table tbody tr:hover td {
+    background: #f8f6f4;
+}
+
+.admin-table__detail-cell {
+    text-align: center;
+}
+
+.admin-table__detail-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    min-width: 80px;
+    border: 1px solid #e5ddd7;
+    background: #f7f6f5;
+    color: #b7aba4;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.admin-table__empty {
+    text-align: center;
+}
+
+.admin-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.admin-modal {
+    position: relative;
+    width: min(780px, calc(100% - 24px));
+    border: 1px solid #8d7f76;
+    padding: 52px 56px 36px;
+    background: #fff;
+    color: #8d7f76;
+}
+
+.admin-modal__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #8d7f76;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 30px;
+    color: #8d7f76;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.admin-modal__row {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    gap: 6px;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.admin-modal__row--top {
+    align-items: start;
+}
+
+.admin-modal__label,
+.admin-modal__value {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.admin-modal__label {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.admin-modal__value {
+    white-space: normal;
+    word-break: break-word;
+}
+
+.admin-modal__value--multiline {
+    white-space: pre-wrap;
+}
+
+.admin-modal__actions {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.admin-modal__delete {
+    min-width: 90px;
+    height: 40px;
+    border: none;
+    background: #ba370d;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header-btn {
+        min-width: 86px;
+        height: 32px;
+        font-size: 20px;
+    }
+
+    .admin-page {
+        padding: 28px 14px 40px;
+    }
+
+    .admin-search {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-search__input,
+    .admin-search__button,
+    .admin-date-picker,
+    .admin-search__input--date-native {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .admin-search__button {
+        font-size: 16px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        font-size: 14px;
+    }
+
+    .admin-modal {
+        padding: 42px 16px 24px;
+    }
+
+    .admin-modal__row {
+        grid-template-columns: 1fr;
+        margin-bottom: 12px;
+    }
+
+    .admin-modal__label,
+    .admin-modal__value {
+        font-size: 20px;
+    }
+}
