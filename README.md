@@ -10,8 +10,6 @@ cd contact-form-submit
 docker compose up -d --build
 ```
 
-※ ポートが他のコンテナと競合して起動できない場合は、`docker compose down` で他プロジェクトを停止してから再実行してください。
-
 ### Laravel環境構築
 
 ```bash
